@@ -1,29 +1,31 @@
-# ---------------------------------------------------------------
 # Variables for importing
-# ---------------------------------------------------------------
+from getInputs import financials
+
+
 # Shared model variables
-price = 21.76
-eps = 0.28
-dividend = 0.27
-targetRateOfReturn = 0.12
-PEatSale = 17
+name = financials['Name']
+price = float(financials['Price'])
+eps = float(financials['EPS'])
+dividend = float(financials['Dividend'])
+targetRateOfReturn = float(financials['Target Rate of Return'])
+PEatSale = float(financials['PE at Sale'])
 
 # Graham-Lynch model
-longTermGrowthRate = 0.12
-corporateAAABondYield = 0.04
+longTermGrowthRate = float(financials['Long Term Growth Rate'])
+corporateAAABondYield = float(financials['Corporate AAA Bond Yield'])
 
 # Simple model
-shortTermEPSgrowth = 0.25
-longTermEPSgrowth = 0.1
-shortTermDividendGrowth = 0.048
-longTermDividendGrowth = 0.03
+shortTermEPSgrowth = float(financials['Short Term EPS Growth Rate'])
+longTermEPSgrowth = float(financials['Long Term EPS Growth Rate'])
+shortTermDividendGrowth = float(financials['Short Term Dividend Growth Rate'])
+longTermDividendGrowth = float(financials['Long Term Dividend Growth Rate'])
 
 # Detailed model
-volumeGrowthRate = 0.36
-pricingGrowthRate = 0.03
-pmExpansionRate = 0
-shareReductionPercentPerYear = 0.03
-dividendPayoutChangeRate = 0
+volumeGrowthRate = float(financials['Volume Growth Rate'])
+pricingGrowthRate = float(financials['Pricing Growth Rate'])
+pmExpansionRate = float(financials['Profit Margin Expansion Rate'])
+shareReductionPercentPerYear = float(financials['Share Reduction % Per Year'])
+dividendPayoutChangeRate = float(financials['Dividend Payout Change Rate'])
 
 # Empty objects for storing projections
 epsProjections = {}
