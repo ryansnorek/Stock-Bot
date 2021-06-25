@@ -47,6 +47,7 @@ def simpleModel():
 
     print("SIMPLE MODEL")
     print(name)
+    print("Current Price: $", price)
     print("Sale Price in 10 Years: $", salePrice)
     print("Dividend Yield at Sale: ", dividendYieldAtSale, "%")
     print("Sum of Reinvested Dividends: $", sumOfReinvestedDividends)
@@ -96,6 +97,7 @@ def detailedModel():
 
     print("DETAILED MODEL")
     print(name)
+    print("Current Price: $", price)
     print("Sale Price In 10 Years: $", salePrice)
     print("Dividend Yield at Sale: ", dividendYieldAtSale, "%")
     print("Sum of Reinvested Dividends: $", sumOfReinvestedDividends)
@@ -120,6 +122,7 @@ def grahamLynchModel():
 
     print("GRAHAM LYNCH MODEL")
     print(name)
+    print("Current Price: $", price)
     print("Graham Fair Value: $", grahamFairValue)
     print("GFV adjusted: $", adjGrahamFairValue)
     print("Dividend Adjusted PEG Ratio: ", dividendAdjPEGratio)
